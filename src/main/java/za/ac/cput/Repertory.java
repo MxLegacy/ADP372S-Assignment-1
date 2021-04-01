@@ -11,12 +11,11 @@ public class Repertory {
     public String emailAdress;
 
 
-    public Repertory(String contactName, String ContactSurname, int ContactNumber, String emailAdress) {
-        contactName = contactName;
-        ContactSurname = ContactSurname;
-        ContactNumber = ContactNumber;
-        emailAdress = emailAdress;
-
+    public Repertory(String contactName, String contactSurname, int contactNumber, String emailAdress) {
+        this.contactName = contactName;
+        this.ContactSurname = contactSurname;
+        this.ContactNumber = contactNumber;
+        this.emailAdress = emailAdress;
     }
 
     public String getContactName() {

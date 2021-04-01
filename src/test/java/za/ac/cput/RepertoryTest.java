@@ -15,10 +15,33 @@ class RepertoryTest {
         conctact1 = new Repertory("Joseph","umba",9876, "Jos@gmail.com");
         conctact2 = new Repertory("plamedie","bitota",1234,"bit@gmail.com");
         conctact3 = conctact1;
+        conctact4 = conctact2;
     }
+    /*
+    * Methods TestIndetity
+    * */
     @Test
     public void testConctactIdentity () {
-
-
+        assertSame(conctact1,conctact3);
     }
+    /*
+    * Methods TestEquality
+    * */
+    @Test
+    public void testContactEquality (){
+        assertEquals(conctact2,conctact4);
+ } /*
+    * Methods to test the failure
+    */
+    @Test
+    public void testConctactFails() {
+            fail("The test that coded was meant to faill");
+            String excpectedName = "Joseph";
+            String output = conctact1.getContactName();
+            assertEquals(excpectedName, output);
+        }
+        @Test
+    public void testimeOut (){
+
+        }
 }
