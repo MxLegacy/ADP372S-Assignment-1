@@ -9,7 +9,12 @@ public class Repertory {
     public String ContactSurname;
     public int ContactNumber;
     public String emailAdress;
+    public String name;
 
+
+    public Repertory(String message) {
+        this.name = name;
+    }
 
     public Repertory(String contactName, String contactSurname, int contactNumber, String emailAdress) {
         this.contactName = contactName;
