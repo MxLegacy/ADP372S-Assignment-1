@@ -19,7 +19,6 @@ class RepertoryTest {
     private Repertory conctact3;
     private Repertory conctact4;
 
-
     @BeforeEach
     void setUp() {
         conctact1 = new Repertory("Joseph","umba",9876, "Jos@gmail.com");
@@ -52,8 +51,8 @@ class RepertoryTest {
         }
         @Test
     public void testimeOut (){
-
-
+        assertTimeout(Duration.ofSeconds(40), () -> {
+            });
 
         }
         @Disabled
