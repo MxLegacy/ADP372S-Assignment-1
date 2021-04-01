@@ -46,9 +46,9 @@ class RepertoryTest {
         }
         @Test
     public void testimeOut (){
-        assertTimeout (ofMinutes(2),()) -> {
+      //  assertTimeout (ofMinutes(2),()) -> {
 
-            }
+              //  };
 
         }
         @Disabled
