@@ -3,6 +3,9 @@ package za.ac.cput;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
+import static java.time.Duration.ofMinutes;
+import static org.junit.jupiter.api.Assertions.assertTimeout;
+
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -43,11 +46,15 @@ class RepertoryTest {
         }
         @Test
     public void testimeOut (){
+        assertTimeout (ofMinutes(2),()) -> {
+
+            }
 
         }
         @Disabled
         @Test
-    public void testDisable (){
-            assertEquals(conctact2,conctact4);
+    public void testDisable () {
+            assertEquals(conctact2, conctact4);
         }
+
 }
