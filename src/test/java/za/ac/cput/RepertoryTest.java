@@ -3,10 +3,6 @@ package za.ac.cput;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
-
-import java.time.Duration;
-import java.util.concurrent.TimeUnit;
-
 import static java.time.Duration.ofMinutes;
 import static org.junit.jupiter.api.Assertions.assertTimeout;
 
@@ -18,7 +14,6 @@ class RepertoryTest {
     private Repertory conctact2;
     private Repertory conctact3;
     private Repertory conctact4;
-
     @BeforeEach
     void setUp() {
         conctact1 = new Repertory("Joseph","umba",9876, "Jos@gmail.com");
@@ -51,8 +46,9 @@ class RepertoryTest {
         }
         @Test
     public void testimeOut (){
-        assertTimeout(Duration.ofSeconds(40), () -> {
-            });
+        assertTimeout (ofMinutes(2),()) -> {
+
+            }
 
         }
         @Disabled
